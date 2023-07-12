@@ -1,11 +1,14 @@
 import logo from './img/TuZonaGamer.svg'
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import ItemCount from './components/ItemCount/ItemCount';
+
 
 function App() {
-  const [count, setCount] = useState(0)
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const handleSubmit = (event) => {
@@ -14,86 +17,28 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+    <div className='App'>
+      <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+        <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
+        <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+      </Routes>
+      </BrowserRouter>
+    </div>
+
     <ItemListContainer className="greeting" greeting={'¡Bienvenido a Tu Zona Gamer!'}/>
+    <ItemDetailContainer/>
+    <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
+    
     <div>
       <img className='logo' src={logo} alt="Logo"/>
     </div>
 
       <h2>Aquí econtrarás los mejores videojuegos para consola y PC:</h2>
       <br/>
-
-      <h3>Consola</h3>
-      <div>
-        <div className="card">
-        <img className='producto' src="./src/img/evil west.webp" alt="Evil West"/>
-        <p>Evil West</p>
-        </div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          Agregar al carrito {count}
-        </button>
-        <div/>
-        
-        <div className="card">
-        <img className='producto' src="./src/img/sonic.webp" alt="Sonic Frontiers"/>
-        <p>Sonic Frontiers</p>
-        <button onClick={() => alert("Sin Stock")}>
-        Agregar al carrito {0}
-        </button>
-        </div>
-
-        <div className="card">
-        <img className='producto' src="./src/img/dreamlight.webp" alt="Dreamlighy Valley"/>
-        <p>Dreamlighy Valley</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          Agregar al carrito {count}
-        </button>
-        </div>
-
-        <div className="card">
-        <img className='producto' src="./src/img/valkyrie.webp" alt="Valkirye"/>
-        <p>Valkirye</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-        Agregar al carrito {count}
-        </button>
-        </div>
-      </div>
-      <br/>
-
-      <h3>PC</h3>
-      <div>
-        <div className="card">
-        <img className='producto' src="./src/img/inscryption.webp" alt="Inscryption"/>
-        <p>Inscryption</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-        Agregar al carrito {count}
-        </button>
-        </div>
-
-        <div className="card">
-        <img className='producto' src="./src/img/kena.webp" alt="Kena: Bridge of Spirits"/>
-        <p>Kena: Bridge of Spirits</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-        Agregar al carrito {count}
-        </button>
-        </div>
-
-        <div className="card">
-        <img className='producto' src="./src/img/tunic.webp" alt="Tunic"/>
-        <p>Tunic</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-        Agregar al carrito {count}
-        </button>
-        </div>
-
-        <div className="card">
-        <img className='producto' src="./src/img/we are ofk.webp" alt="OFK"/>
-        <p>OFK</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-        Agregar al carrito {count}
-        </button>
-        </div>
-      </div>
 
         <p>
           Recibe noticias sobre los próximos juegos:
