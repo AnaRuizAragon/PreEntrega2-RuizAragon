@@ -1,0 +1,84 @@
+.NavBar{
+    width:'100%';
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(89, 255, 47, 0.486);
+  }
+
+.Option{
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #32deeb, #4df163);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 20%;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ActiveOption{
+    background-color: initial;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 20%;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(-180deg, #4df163, #32deeb);
+    border: 2px solid rgb(66, 252, 9);
+  }
+
+  .logo {
+    height: 120px;
+    padding: 50px;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #32deeb);
+  }
+  
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #4df163);
+  }

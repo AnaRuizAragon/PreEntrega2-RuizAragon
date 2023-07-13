@@ -23,7 +23,9 @@ const ItemListContainer = ({greeting}) => {
 return (
     <div>
         <h1>{greeting}</h1>
+        <h2>Aquí econtrarás los mejores videojuegos para consola y PC:</h2>
         <ItemList products={products}/>
+        
     </div>
 )
 }

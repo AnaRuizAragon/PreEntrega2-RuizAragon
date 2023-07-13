@@ -8,6 +8,7 @@ const products = [
         stock: 25,
         description: 'Una amenaza oscura consume el Viejo Oeste. En solitario o en cooperativo, lucha con estilo en combates explosivos y viscerales contra monstruosidades sedientas de sangre. Erradica las hordas vampíricas con tu guantelete alimentado por rayos y conviértete en un Superhéroe del Lejano Oeste.'
     },
+    
     {
         id: 'Sonic Frontiers',
         name: 'Sonic Frontiers',
@@ -17,6 +18,7 @@ const products = [
         stock: 25,
         description: '¡Experimenta a Sonic como nunca antes!'
     },
+
     {
         id: 'Dreamlight Valley',
         name: 'Dreamlight Valley',
@@ -26,6 +28,7 @@ const products = [
         stock: 25,
         description: 'Explora un mundo lleno de la magia de Disney a medida que descubres ricas historias y construyes el vecindario perfecto junto a los héroes y villanos de Disney y Pixar en este nuevo juego de aventuras de simulación de vida. Bienvenido a Disney Dreamlight Valley.'
     },
+
     {
         id: 'Valkirye Elysium',
         name: 'Valkirye Elysium',
@@ -35,6 +38,7 @@ const products = [
         stock: 25,
         description: 'Hace mucho tiempo, Ragnarok, el Fin de los Tiempos, se cernía sobre los reinos. El Padre Todopoderoso Odín, con lo último de sus fuerzas, creó un emisario de la redención, Valkyrie; su única tarea es la salvación de un mundo condenado.'
     },
+
     {
         id: 'Inscryption',
         name: 'Inscryption',
@@ -44,6 +48,7 @@ const products = [
         stock: 25,
         description: 'Inscryption es un juego de cartas, una odisea negra como la tinta que mezcla el «roguelike» de creación de mazos, puzles de estilo «escape room» y terror psicológico en un batido con un toque de sangre. Pero más oscuros aún son los secretos inscritos en las cartas...'
     },
+
     {
         id: 'Kena: Bridge of Spirits',
         name: 'Kena: Bridge of Spirits',
@@ -53,6 +58,7 @@ const products = [
         stock: 25,
         description: 'Una aventura de acción basada en una historia que combina la exploración con el combate vertiginoso. Desenreda el pasado en la piel de Kena, una joven guía espiritual en búsqueda del sagrado Santuario de la montaña.'
     },
+
     {
         id: 'Tunic',
         name: 'Tunic',
@@ -62,6 +68,7 @@ const products = [
         stock: 25,
         description: 'Explora un reino repleto de leyendas olvidadas, poderes ancestrales y feroces monstruos en TUNIC, un juego de acción isométrico sobre un pequeño zorro que emprende una gran aventura.'
     },
+
     {
         id: 'We Are OFK',
         name: 'We Are OFK',

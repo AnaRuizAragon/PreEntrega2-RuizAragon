@@ -1,11 +1,9 @@
-import logo from './img/TuZonaGamer.svg'
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import ItemCount from './components/ItemCount/ItemCount';
 
 
 function App() {
@@ -30,12 +28,6 @@ function App() {
     </div>
 
     {/*<ItemDetailContainer/>
-    
-    <div>
-      <img className='logo' src={logo} alt="Logo"/>
-    </div>
-
-      <h2>Aquí econtrarás los mejores videojuegos para consola y PC:</h2>
       <br/>
 
         <p>
