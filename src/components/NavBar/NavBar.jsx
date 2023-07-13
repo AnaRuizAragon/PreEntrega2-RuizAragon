@@ -10,8 +10,8 @@ return (
         </Link>
         
             <div className="Categories">
-                <NavLink to={`/category/consola`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Consola</NavLink>
-                <NavLink to={`/category/pc`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>PC</NavLink>
+                <NavLink to={`/category/Consola`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Consola</NavLink>
+                <NavLink to={`/category/PC`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>PC</NavLink>
             </div>
             <CartWidget  />
     </nav>

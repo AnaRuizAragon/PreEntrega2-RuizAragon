@@ -9,11 +9,11 @@ import ItemCount from './components/ItemCount/ItemCount';
 
 
 function App() {
-  const [nombre, setNombre] = useState('');
+  /*const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const handleSubmit = (event) => {
     event.preventDefault();
-  };
+  };*/
 
   return (
     <>
@@ -21,17 +21,15 @@ function App() {
       <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
-        <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+        <Route path='/' element={<ItemListContainer className="greeting" greeting={'¡Bienvenido a Tu Zona Gamer!'}/>}/>
+        <Route path='/category/:categoryId' element={<ItemListContainer className="greeting" greeting={'¡Bienvenido a Tu Zona Gamer!'}/>}/>
         <Route path='/item/:itemId' element={<ItemDetailContainer/>}/>
         <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
       </Routes>
       </BrowserRouter>
     </div>
 
-    <ItemListContainer className="greeting" greeting={'¡Bienvenido a Tu Zona Gamer!'}/>
-    <ItemDetailContainer/>
-    <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
+    {/*<ItemDetailContainer/>
     
     <div>
       <img className='logo' src={logo} alt="Logo"/>
@@ -58,11 +56,12 @@ function App() {
           <button type="submit">Enviar</button>
         </form>
         </div>
+  
       
       <p className="read-the-docs">
         Ecommerce creado por Ana Ruiz Aragón
       </p>
-
+      */}
     </>
   )
 }

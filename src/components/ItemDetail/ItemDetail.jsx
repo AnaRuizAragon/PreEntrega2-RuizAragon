@@ -1,7 +1,13 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 
+
 const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
+    
+    const onAdd = (cantidad) => {
+        console.log(cantidad)
+    }
+
     return (
         <article className="CardItem">
             <header className="Header">
@@ -27,8 +33,9 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
                 </p>
             </section>
             <footer className="ItemFooter">
-                <button className="Option">Ver detalles</button>
             </footer>
+            <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+            
         </article>
     )
 }
